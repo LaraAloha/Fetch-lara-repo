@@ -37,6 +37,3 @@ fetch('https://api.github.com/users/'+userName)
 	document.body.appendChild(div);
 	div.innerText = "Добавьте в URL: {адрес страницы}?username={имя пользователя}"; 
 }
-
-		//	.catch(function(error) { 
-			//	console.log(error); });

@@ -1,8 +1,8 @@
-//http://0.0.0.0:8000/?username=Lara_Aloha
+//http://0.0.0.0:8000/?username=LaraAloha
 
 var searchParams = new URLSearchParams(window.location.search);
-	if (searchParams.has('username') && userName !== undefined) {
 var userName = searchParams.get('username');
+	if (searchParams.has('username') && userName !== '') {
 
 fetch('https://api.github.com/users/'+userName)
 	.then(res => res.json())
@@ -37,3 +37,4 @@ fetch('https://api.github.com/users/'+userName)
 	document.body.appendChild(div);
 	div.innerText = "Добавьте в URL: {адрес страницы}?username={имя пользователя}"; 
 }
+//Исправлено
